@@ -1,0 +1,670 @@
+[Training]: 100%|██████████| 50/50 [00:24<00:00,  2.02it/s]
+Train Loss: 0.0080 | Val Loss: 0.2154 | SpearmanR: 0.2177
+[Surveying]: 100%|██████████| 197/197 [00:02<00:00, 72.47it/s]
+
+Training Model 3...
+[Training]: 100%|██████████| 50/50 [00:24<00:00,  2.05it/s]
+Train Loss: 0.0032 | Val Loss: 0.2274 | SpearmanR: 0.3400
+[Surveying]: 100%|██████████| 197/197 [00:02<00:00, 71.62it/s]
+
+Training Model 4...
+[Training]:  68%|██████▊   | 34/50 [00:14<00:06,  2.40it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0454 | Val Loss: 0.2249 | SpearmanR: 0.2186
+[Surveying]: 100%|██████████| 197/197 [00:02<00:00, 71.65it/s]
+
+Training Model 5...
+[Training]: 100%|██████████| 50/50 [00:20<00:00,  2.38it/s]
+Train Loss: 0.0055 | Val Loss: 0.2274 | SpearmanR: 0.2925
+[Surveying]: 100%|██████████| 197/197 [00:02<00:00, 71.48it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 2/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 32 actively selected samples...
+[Training]:  66%|██████▌   | 33/50 [00:14<00:07,  2.23it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0247 | Val Loss: 0.2141 | SpearmanR: 0.3016
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.18it/s]
+Training and evaluating model using 32 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:23<00:00,  2.13it/s]
+Train Loss: 0.0092 | Val Loss: 0.1871 | SpearmanR: 0.4336
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.39it/s]
+Progress for experiment 1 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]: 100%|██████████| 50/50 [00:22<00:00,  2.18it/s]
+Train Loss: 0.0148 | Val Loss: 0.2006 | SpearmanR: 0.3834
+[Surveying]: 100%|██████████| 196/196 [00:02<00:00, 71.06it/s]
+
+Training Model 2...
+[Training]: 100%|██████████| 50/50 [00:22<00:00,  2.22it/s]
+Train Loss: 0.0074 | Val Loss: 0.2133 | SpearmanR: 0.3980
+[Surveying]: 100%|██████████| 196/196 [00:02<00:00, 71.67it/s]
+
+Training Model 3...
+[Training]:  78%|███████▊  | 39/50 [00:17<00:04,  2.23it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0584 | Val Loss: 0.1947 | SpearmanR: 0.3315
+[Surveying]: 100%|██████████| 196/196 [00:02<00:00, 71.58it/s]
+
+Training Model 4...
+[Training]:  20%|██        | 10/50 [00:04<00:18,  2.15it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.1826 | Val Loss: 0.2157 | SpearmanR: 0.0660
+[Surveying]: 100%|██████████| 196/196 [00:02<00:00, 71.90it/s]
+
+Training Model 5...
+[Training]: 100%|██████████| 50/50 [00:22<00:00,  2.26it/s]
+Train Loss: 0.0233 | Val Loss: 0.1966 | SpearmanR: 0.4295
+[Surveying]: 100%|██████████| 196/196 [00:02<00:00, 71.69it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 3/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 48 actively selected samples...
+[Training]:  48%|████▊     | 24/50 [00:11<00:12,  2.04it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0988 | Val Loss: 0.1806 | SpearmanR: 0.2663
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 71.73it/s]
+Training and evaluating model using 48 randomly selected samples...
+[Training]:  62%|██████▏   | 31/50 [00:15<00:09,  1.98it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0344 | Val Loss: 0.1873 | SpearmanR: 0.4366
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 71.93it/s]
+Progress for experiment 2 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  72%|███████▏  | 36/50 [00:17<00:06,  2.03it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0305 | Val Loss: 0.1922 | SpearmanR: 0.3839
+[Surveying]: 100%|██████████| 195/195 [00:02<00:00, 71.59it/s]
+
+Training Model 2...
+[Training]: 100%|██████████| 50/50 [00:23<00:00,  2.12it/s]
+Train Loss: 0.0129 | Val Loss: 0.2068 | SpearmanR: 0.4183
+[Surveying]: 100%|██████████| 195/195 [00:02<00:00, 71.62it/s]
+
+Training Model 3...
+[Training]:  66%|██████▌   | 33/50 [00:16<00:08,  2.06it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0425 | Val Loss: 0.2212 | SpearmanR: 0.2750
+[Surveying]: 100%|██████████| 195/195 [00:02<00:00, 72.00it/s]
+
+Training Model 4...
+[Training]: 100%|██████████| 50/50 [00:23<00:00,  2.17it/s]
+Train Loss: 0.0408 | Val Loss: 0.1813 | SpearmanR: 0.3629
+[Surveying]: 100%|██████████| 195/195 [00:02<00:00, 73.23it/s]
+
+Training Model 5...
+[Training]: 100%|██████████| 50/50 [00:23<00:00,  2.17it/s]
+Train Loss: 0.0165 | Val Loss: 0.1887 | SpearmanR: 0.3988
+[Surveying]: 100%|██████████| 195/195 [00:02<00:00, 72.22it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 4/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 64 actively selected samples...
+[Training]:  64%|██████▍   | 32/50 [00:16<00:09,  1.92it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0420 | Val Loss: 0.1707 | SpearmanR: 0.3830
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.57it/s]
+Training and evaluating model using 64 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:25<00:00,  1.96it/s]
+Train Loss: 0.0082 | Val Loss: 0.1595 | SpearmanR: 0.5058
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.54it/s]
+Progress for experiment 3 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  80%|████████  | 40/50 [00:20<00:05,  1.91it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0399 | Val Loss: 0.1793 | SpearmanR: 0.3419
+[Surveying]: 100%|██████████| 194/194 [00:02<00:00, 72.21it/s]
+
+Training Model 2...
+[Training]:  62%|██████▏   | 31/50 [00:16<00:09,  1.93it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0477 | Val Loss: 0.1749 | SpearmanR: 0.4240
+[Surveying]: 100%|██████████| 194/194 [00:02<00:00, 72.13it/s]
+
+Training Model 3...
+[Training]:  48%|████▊     | 24/50 [00:12<00:13,  1.87it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0810 | Val Loss: 0.1765 | SpearmanR: 0.4162
+[Surveying]: 100%|██████████| 194/194 [00:02<00:00, 72.21it/s]
+
+Training Model 4...
+[Training]: 100%|██████████| 50/50 [00:25<00:00,  1.99it/s]
+Train Loss: 0.0228 | Val Loss: 0.1700 | SpearmanR: 0.4219
+[Surveying]: 100%|██████████| 194/194 [00:02<00:00, 72.34it/s]
+
+Training Model 5...
+[Training]:  74%|███████▍  | 37/50 [00:19<00:06,  1.93it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0267 | Val Loss: 0.1801 | SpearmanR: 0.3839
+[Surveying]: 100%|██████████| 194/194 [00:02<00:00, 72.22it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 5/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 80 actively selected samples...
+[Training]:  46%|████▌     | 23/50 [00:12<00:15,  1.80it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0847 | Val Loss: 0.1697 | SpearmanR: 0.5016
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 71.89it/s]
+Training and evaluating model using 80 randomly selected samples...
+[Training]:  44%|████▍     | 22/50 [00:12<00:15,  1.77it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0954 | Val Loss: 0.2698 | SpearmanR: 0.4686
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.37it/s]
+Progress for experiment 4 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  74%|███████▍  | 37/50 [00:20<00:07,  1.79it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0553 | Val Loss: 0.1523 | SpearmanR: 0.4740
+[Surveying]: 100%|██████████| 193/193 [00:02<00:00, 72.16it/s]
+
+Training Model 2...
+[Training]:  70%|███████   | 35/50 [00:19<00:08,  1.78it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0502 | Val Loss: 0.1516 | SpearmanR: 0.4617
+[Surveying]: 100%|██████████| 193/193 [00:02<00:00, 72.21it/s]
+
+Training Model 3...
+[Training]: 100%|██████████| 50/50 [00:26<00:00,  1.86it/s]
+Train Loss: 0.0285 | Val Loss: 0.1591 | SpearmanR: 0.5433
+[Surveying]: 100%|██████████| 193/193 [00:02<00:00, 71.87it/s]
+
+Training Model 4...
+[Training]: 100%|██████████| 50/50 [00:27<00:00,  1.85it/s]
+Train Loss: 0.0219 | Val Loss: 0.1666 | SpearmanR: 0.4701
+[Surveying]: 100%|██████████| 193/193 [00:02<00:00, 72.05it/s]
+
+Training Model 5...
+[Training]:  76%|███████▌  | 38/50 [00:21<00:06,  1.80it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0259 | Val Loss: 0.1717 | SpearmanR: 0.4413
+[Surveying]: 100%|██████████| 193/193 [00:02<00:00, 72.44it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 6/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 96 actively selected samples...
+[Training]: 100%|██████████| 50/50 [00:28<00:00,  1.74it/s]
+Train Loss: 0.0151 | Val Loss: 0.1551 | SpearmanR: 0.5262
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 73.04it/s]
+Training and evaluating model using 96 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:28<00:00,  1.74it/s]
+Train Loss: 0.0140 | Val Loss: 0.1314 | SpearmanR: 0.6052
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.43it/s]
+Progress for experiment 5 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  60%|██████    | 30/50 [00:17<00:11,  1.67it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0404 | Val Loss: 0.1447 | SpearmanR: 0.5293
+[Surveying]: 100%|██████████| 192/192 [00:02<00:00, 72.16it/s]
+
+Training Model 2...
+[Training]:  64%|██████▍   | 32/50 [00:18<00:10,  1.69it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0403 | Val Loss: 0.1606 | SpearmanR: 0.4584
+[Surveying]: 100%|██████████| 192/192 [00:02<00:00, 71.35it/s]
+
+Training Model 3...
+[Training]:  62%|██████▏   | 31/50 [00:18<00:11,  1.66it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0561 | Val Loss: 0.1664 | SpearmanR: 0.4862
+[Surveying]: 100%|██████████| 192/192 [00:02<00:00, 71.95it/s]
+
+Training Model 4...
+[Training]:  92%|█████████▏| 46/50 [00:26<00:02,  1.71it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0231 | Val Loss: 0.1736 | SpearmanR: 0.4214
+[Surveying]: 100%|██████████| 192/192 [00:02<00:00, 72.25it/s]
+
+Training Model 5...
+[Training]:  42%|████▏     | 21/50 [00:12<00:17,  1.66it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0818 | Val Loss: 0.1743 | SpearmanR: 0.3717
+[Surveying]: 100%|██████████| 192/192 [00:02<00:00, 72.17it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 7/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 112 actively selected samples...
+[Training]:  46%|████▌     | 23/50 [00:14<00:16,  1.60it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0813 | Val Loss: 0.1691 | SpearmanR: 0.4151
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.34it/s]
+Training and evaluating model using 112 randomly selected samples...
+[Training]:  76%|███████▌  | 38/50 [00:23<00:07,  1.62it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0423 | Val Loss: 0.1358 | SpearmanR: 0.5701
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.57it/s]
+Progress for experiment 6 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  70%|███████   | 35/50 [00:22<00:09,  1.58it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0653 | Val Loss: 0.1622 | SpearmanR: 0.5083
+[Surveying]: 100%|██████████| 191/191 [00:02<00:00, 72.11it/s]
+
+Training Model 2...
+[Training]:  68%|██████▊   | 34/50 [00:21<00:09,  1.61it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0354 | Val Loss: 0.1543 | SpearmanR: 0.5034
+[Surveying]: 100%|██████████| 191/191 [00:02<00:00, 72.23it/s]
+
+Training Model 3...
+[Training]:  68%|██████▊   | 34/50 [00:21<00:10,  1.60it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0590 | Val Loss: 0.1999 | SpearmanR: 0.4329
+[Surveying]: 100%|██████████| 191/191 [00:02<00:00, 71.81it/s]
+
+Training Model 4...
+[Training]:  46%|████▌     | 23/50 [00:14<00:17,  1.56it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0975 | Val Loss: 0.1574 | SpearmanR: 0.3849
+[Surveying]: 100%|██████████| 191/191 [00:02<00:00, 72.20it/s]
+
+Training Model 5...
+[Training]:  44%|████▍     | 22/50 [00:14<00:18,  1.54it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.1261 | Val Loss: 0.1665 | SpearmanR: 0.4696
+[Surveying]: 100%|██████████| 191/191 [00:02<00:00, 72.39it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 8/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 128 actively selected samples...
+[Training]: 100%|██████████| 50/50 [00:37<00:00,  1.34it/s]
+Train Loss: 0.0340 | Val Loss: 0.1863 | SpearmanR: 0.4814
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.93it/s]
+Training and evaluating model using 128 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:38<00:00,  1.31it/s]
+Train Loss: 0.0117 | Val Loss: 0.1383 | SpearmanR: 0.6219
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 73.18it/s]
+Progress for experiment 7 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  52%|█████▏    | 26/50 [00:20<00:18,  1.27it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0729 | Val Loss: 0.1497 | SpearmanR: 0.5147
+[Surveying]: 100%|██████████| 190/190 [00:02<00:00, 72.73it/s]
+
+Training Model 2...
+[Training]:  74%|███████▍  | 37/50 [00:25<00:08,  1.47it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0260 | Val Loss: 0.1692 | SpearmanR: 0.5013
+[Surveying]: 100%|██████████| 190/190 [00:02<00:00, 71.99it/s]
+
+Training Model 3...
+[Training]:  92%|█████████▏| 46/50 [00:29<00:02,  1.55it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0283 | Val Loss: 0.1684 | SpearmanR: 0.5248
+[Surveying]: 100%|██████████| 190/190 [00:02<00:00, 71.76it/s]
+
+Training Model 4...
+[Training]:  92%|█████████▏| 46/50 [00:30<00:02,  1.53it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0348 | Val Loss: 0.1707 | SpearmanR: 0.4762
+[Surveying]: 100%|██████████| 190/190 [00:02<00:00, 72.20it/s]
+
+Training Model 5...
+[Training]:  72%|███████▏  | 36/50 [00:23<00:09,  1.52it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0374 | Val Loss: 0.1759 | SpearmanR: 0.4864
+[Surveying]: 100%|██████████| 190/190 [00:02<00:00, 72.20it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 9/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 144 actively selected samples...
+[Training]:  98%|█████████▊| 49/50 [00:33<00:00,  1.46it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0116 | Val Loss: 0.1714 | SpearmanR: 0.4997
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.27it/s]
+Training and evaluating model using 144 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:34<00:00,  1.46it/s]
+Train Loss: 0.0144 | Val Loss: 0.1306 | SpearmanR: 0.6410
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.29it/s]
+Progress for experiment 8 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  60%|██████    | 30/50 [00:21<00:14,  1.43it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0424 | Val Loss: 0.1649 | SpearmanR: 0.5308
+[Surveying]: 100%|██████████| 189/189 [00:02<00:00, 71.86it/s]
+
+Training Model 2...
+[Training]: 100%|██████████| 50/50 [00:33<00:00,  1.48it/s]
+Train Loss: 0.0117 | Val Loss: 0.1694 | SpearmanR: 0.5315
+[Surveying]: 100%|██████████| 189/189 [00:02<00:00, 72.07it/s]
+
+Training Model 3...
+[Training]: 100%|██████████| 50/50 [00:33<00:00,  1.48it/s]
+Train Loss: 0.0240 | Val Loss: 0.1549 | SpearmanR: 0.5308
+[Surveying]: 100%|██████████| 189/189 [00:02<00:00, 72.23it/s]
+
+Training Model 4...
+[Training]:  70%|███████   | 35/50 [00:24<00:10,  1.44it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0308 | Val Loss: 0.1734 | SpearmanR: 0.4931
+[Surveying]: 100%|██████████| 189/189 [00:02<00:00, 72.04it/s]
+
+Training Model 5...
+[Training]:  66%|██████▌   | 33/50 [00:22<00:11,  1.46it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0700 | Val Loss: 0.1735 | SpearmanR: 0.5098
+[Surveying]: 100%|██████████| 189/189 [00:02<00:00, 71.86it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 10/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 160 actively selected samples...
+[Training]:  88%|████████▊ | 44/50 [00:31<00:04,  1.38it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0272 | Val Loss: 0.1456 | SpearmanR: 0.5375
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 71.84it/s]
+Training and evaluating model using 160 randomly selected samples...
+[Training]:  92%|█████████▏| 46/50 [00:33<00:02,  1.37it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0211 | Val Loss: 0.1360 | SpearmanR: 0.6077
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.62it/s]
+Progress for experiment 9 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  48%|████▊     | 24/50 [00:17<00:19,  1.34it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0389 | Val Loss: 0.1603 | SpearmanR: 0.5365
+[Surveying]: 100%|██████████| 188/188 [00:02<00:00, 72.32it/s]
+
+Training Model 2...
+[Training]:  62%|██████▏   | 31/50 [00:22<00:13,  1.40it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0346 | Val Loss: 0.1535 | SpearmanR: 0.5161
+[Surveying]: 100%|██████████| 188/188 [00:02<00:00, 71.18it/s]
+
+Training Model 3...
+[Training]: 100%|██████████| 50/50 [00:35<00:00,  1.42it/s]
+Train Loss: 0.0163 | Val Loss: 0.1536 | SpearmanR: 0.5291
+[Surveying]: 100%|██████████| 188/188 [00:02<00:00, 71.94it/s]
+
+Training Model 4...
+[Training]: 100%|██████████| 50/50 [00:35<00:00,  1.41it/s]
+Train Loss: 0.0155 | Val Loss: 0.1443 | SpearmanR: 0.5257
+[Surveying]: 100%|██████████| 188/188 [00:02<00:00, 71.92it/s]
+
+Training Model 5...
+[Training]:  60%|██████    | 30/50 [00:22<00:14,  1.36it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0387 | Val Loss: 0.1483 | SpearmanR: 0.5399
+[Surveying]: 100%|██████████| 188/188 [00:02<00:00, 71.88it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 11/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 176 actively selected samples...
+[Training]:  92%|█████████▏| 46/50 [00:34<00:03,  1.33it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0177 | Val Loss: 0.1429 | SpearmanR: 0.5659
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.04it/s]
+Training and evaluating model using 176 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:37<00:00,  1.33it/s]
+Train Loss: 0.0159 | Val Loss: 0.1196 | SpearmanR: 0.6747
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.62it/s]
+Progress for experiment 10 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  82%|████████▏ | 41/50 [00:30<00:06,  1.33it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0309 | Val Loss: 0.1421 | SpearmanR: 0.5890
+[Surveying]: 100%|██████████| 187/187 [09:05<00:00,  2.92s/it]
+
+Training Model 2...
+[Training]:  94%|█████████▍| 47/50 [00:35<00:02,  1.33it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0149 | Val Loss: 0.1308 | SpearmanR: 0.5705
+[Surveying]: 100%|██████████| 187/187 [00:02<00:00, 71.03it/s]
+
+Training Model 3...
+[Training]:  76%|███████▌  | 38/50 [00:29<00:09,  1.29it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0150 | Val Loss: 0.1428 | SpearmanR: 0.5645
+[Surveying]: 100%|██████████| 187/187 [00:02<00:00, 71.19it/s]
+
+Training Model 4...
+[Training]:  80%|████████  | 40/50 [00:30<00:07,  1.30it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0340 | Val Loss: 0.1568 | SpearmanR: 0.5799
+[Surveying]: 100%|██████████| 187/187 [00:02<00:00, 70.89it/s]
+
+Training Model 5...
+[Training]:  66%|██████▌   | 33/50 [00:25<00:13,  1.29it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0414 | Val Loss: 0.1299 | SpearmanR: 0.5718
+[Surveying]: 100%|██████████| 187/187 [00:02<00:00, 70.52it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 12/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 192 actively selected samples...
+[Training]:  90%|█████████ | 45/50 [00:36<00:04,  1.25it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0222 | Val Loss: 0.1329 | SpearmanR: 0.5850
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.37it/s]
+Training and evaluating model using 192 randomly selected samples...
+[Training]:  90%|█████████ | 45/50 [00:35<00:03,  1.28it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0127 | Val Loss: 0.1138 | SpearmanR: 0.6878
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.12it/s]
+Progress for experiment 11 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  66%|██████▌   | 33/50 [00:26<00:13,  1.23it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0351 | Val Loss: 0.1601 | SpearmanR: 0.5975
+[Surveying]: 100%|██████████| 186/186 [00:02<00:00, 71.40it/s]
+
+Training Model 2...
+[Training]: 100%|██████████| 50/50 [00:39<00:00,  1.28it/s]
+Train Loss: 0.0236 | Val Loss: 0.1197 | SpearmanR: 0.6219
+[Surveying]: 100%|██████████| 186/186 [00:02<00:00, 71.41it/s]
+
+Training Model 3...
+[Training]:  92%|█████████▏| 46/50 [00:36<00:03,  1.26it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0148 | Val Loss: 0.1316 | SpearmanR: 0.6024
+[Surveying]: 100%|██████████| 186/186 [00:02<00:00, 71.26it/s]
+
+Training Model 4...
+[Training]: 100%|██████████| 50/50 [00:38<00:00,  1.29it/s]
+Train Loss: 0.0335 | Val Loss: 0.1480 | SpearmanR: 0.6090
+[Surveying]: 100%|██████████| 186/186 [00:02<00:00, 71.61it/s]
+
+Training Model 5...
+[Training]:  90%|█████████ | 45/50 [00:36<00:04,  1.24it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0277 | Val Loss: 0.1279 | SpearmanR: 0.6063
+[Surveying]: 100%|██████████| 186/186 [00:02<00:00, 71.57it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 13/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 208 actively selected samples...
+[Training]:  92%|█████████▏| 46/50 [00:38<00:03,  1.20it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0150 | Val Loss: 0.1216 | SpearmanR: 0.6072
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 71.78it/s]
+Training and evaluating model using 208 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:40<00:00,  1.22it/s]
+Train Loss: 0.0131 | Val Loss: 0.1152 | SpearmanR: 0.6632
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 71.45it/s]
+Progress for experiment 12 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  74%|███████▍  | 37/50 [00:30<00:10,  1.20it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0350 | Val Loss: 0.1427 | SpearmanR: 0.6272
+[Surveying]: 100%|██████████| 185/185 [00:02<00:00, 71.18it/s]
+
+Training Model 2...
+[Training]:  60%|██████    | 30/50 [00:25<00:17,  1.18it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0322 | Val Loss: 0.1473 | SpearmanR: 0.5964
+[Surveying]: 100%|██████████| 185/185 [00:02<00:00, 71.51it/s]
+
+Training Model 3...
+[Training]:  84%|████████▍ | 42/50 [00:35<00:06,  1.20it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0150 | Val Loss: 0.1336 | SpearmanR: 0.6008
+[Surveying]: 100%|██████████| 185/185 [00:02<00:00, 71.30it/s]
+
+Training Model 4...
+[Training]: 100%|██████████| 50/50 [00:40<00:00,  1.24it/s]
+Train Loss: 0.0130 | Val Loss: 0.1440 | SpearmanR: 0.5768
+[Surveying]: 100%|██████████| 185/185 [00:02<00:00, 70.79it/s]
+
+Training Model 5...
+[Training]:  68%|██████▊   | 34/50 [00:28<00:13,  1.19it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0267 | Val Loss: 0.1432 | SpearmanR: 0.6019
+[Surveying]: 100%|██████████| 185/185 [00:02<00:00, 71.21it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 14/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 224 actively selected samples...
+[Training]:  76%|███████▌  | 38/50 [00:32<00:10,  1.16it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0275 | Val Loss: 0.1438 | SpearmanR: 0.6259
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 70.70it/s]
+Training and evaluating model using 224 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:42<00:00,  1.17it/s]
+Train Loss: 0.0161 | Val Loss: 0.1085 | SpearmanR: 0.6936
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 70.39it/s]
+Progress for experiment 13 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  58%|█████▊    | 29/50 [00:25<00:18,  1.14it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0535 | Val Loss: 0.1315 | SpearmanR: 0.6174
+[Surveying]: 100%|██████████| 184/184 [00:02<00:00, 71.40it/s]
+
+Training Model 2...
+[Training]:  64%|██████▍   | 32/50 [00:27<00:15,  1.15it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0233 | Val Loss: 0.1372 | SpearmanR: 0.6205
+[Surveying]: 100%|██████████| 184/184 [00:02<00:00, 71.33it/s]
+
+Training Model 3...
+[Training]:  68%|██████▊   | 34/50 [00:29<00:13,  1.15it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0361 | Val Loss: 0.1444 | SpearmanR: 0.5978
+[Surveying]: 100%|██████████| 184/184 [00:02<00:00, 70.86it/s]
+
+Training Model 4...
+[Training]:  96%|█████████▌| 48/50 [00:41<00:01,  1.15it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0370 | Val Loss: 0.1535 | SpearmanR: 0.6037
+[Surveying]: 100%|██████████| 184/184 [00:02<00:00, 71.25it/s]
+
+Training Model 5...
+[Training]:  92%|█████████▏| 46/50 [00:39<00:03,  1.17it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0230 | Val Loss: 0.1301 | SpearmanR: 0.6176
+[Surveying]: 100%|██████████| 184/184 [00:02<00:00, 71.69it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 15/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 240 actively selected samples...
+[Training]:  66%|██████▌   | 33/50 [00:29<00:15,  1.12it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0484 | Val Loss: 0.1425 | SpearmanR: 0.6348
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 71.19it/s]
+Training and evaluating model using 240 randomly selected samples...
+[Training]: 100%|██████████| 50/50 [00:44<00:00,  1.13it/s]
+Train Loss: 0.0234 | Val Loss: 0.1321 | SpearmanR: 0.7004
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 70.95it/s]
+Progress for experiment 14 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  68%|██████▊   | 34/50 [00:30<00:14,  1.11it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0502 | Val Loss: 0.1171 | SpearmanR: 0.6457
+[Surveying]: 100%|██████████| 183/183 [00:02<00:00, 68.73it/s]
+
+Training Model 2...
+[Training]:  60%|██████    | 30/50 [00:27<00:18,  1.09it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0413 | Val Loss: 0.1298 | SpearmanR: 0.6586
+[Surveying]: 100%|██████████| 183/183 [00:02<00:00, 71.23it/s]
+
+Training Model 3...
+[Training]:  44%|████▍     | 22/50 [00:20<00:25,  1.09it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0533 | Val Loss: 0.1228 | SpearmanR: 0.6539
+[Surveying]: 100%|██████████| 183/183 [00:02<00:00, 71.30it/s]
+
+Training Model 4...
+[Training]:  56%|█████▌    | 28/50 [00:25<00:20,  1.09it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0486 | Val Loss: 0.1217 | SpearmanR: 0.6421
+[Surveying]: 100%|██████████| 183/183 [00:02<00:00, 71.39it/s]
+
+Training Model 5...
+[Training]:  66%|██████▌   | 33/50 [00:30<00:15,  1.10it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0326 | Val Loss: 0.1216 | SpearmanR: 0.6405
+[Surveying]: 100%|██████████| 183/183 [00:02<00:00, 70.49it/s]
+Ensemble training complete, submitting predictions for next cycle.
+
+Cycle 16/64
+-------------------------------------------------
+Selecting new data points...
+Training and evaluating model using 256 actively selected samples...
+[Training]:  74%|███████▍  | 37/50 [00:34<00:12,  1.06it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0402 | Val Loss: 0.1274 | SpearmanR: 0.6578
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 70.48it/s]
+Training and evaluating model using 256 randomly selected samples...
+[Training]:  60%|██████    | 30/50 [00:28<00:18,  1.06it/s]
+Early stopping triggered after 10 epochs with no improvement.
+Train Loss: 0.0235 | Val Loss: 0.1274 | SpearmanR: 0.6650
+[Testing]: 100%|██████████| 25/25 [00:00<00:00, 72.16it/s]
+Progress for experiment 15 appended to active_vs_standard_learning_curve_test.csv
+Starting ensemble training and pool evaluation...
+
+Training Model 1...
+[Training]:  82%|████████▏ | 41/50 [00:38<00:08,  1.08it/s]
