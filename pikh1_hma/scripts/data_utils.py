@@ -2,7 +2,7 @@ import torch
 import pandas as pd
 from torch.utils.data import DataLoader, random_split, Subset
 
-from dataset import BindingDataset
+from .dataset import BindingDataset
 
 def train_val_test_split(
         csv_path,

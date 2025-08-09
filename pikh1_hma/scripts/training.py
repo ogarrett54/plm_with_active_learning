@@ -5,11 +5,13 @@ from tqdm import tqdm
 from torchmetrics.regression import SpearmanCorrCoef, PearsonCorrCoef, MeanSquaredError
 from transformers import logging
 
-from models import get_model
+from .models import get_model
 
 logging.set_verbosity_error()
 
-def train_step(model, optimizer, train_dataloader, device):
+def train_step(model, optimizer, train_dataloader):
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
     model.to(device)
     model.train()
     total_train_loss = 0
@@ -30,7 +32,9 @@ def train_step(model, optimizer, train_dataloader, device):
     avg_train_loss = total_train_loss / len(train_dataloader)
     return avg_train_loss
 
-def val_step(model, val_dataloader, spearman, device):
+def val_step(model, val_dataloader, spearman):
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    
     model.eval()
     total_val_loss = 0
 
@@ -125,7 +129,9 @@ def initialize_and_train_new_model(
 
     return model
 
-def test_model(model, test_dataloader, device, return_results=False):
+def test_model(model, test_dataloader, return_results=False):
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
     # Initialize metrics
     spearman = SpearmanCorrCoef().to(device)
     pearson = PearsonCorrCoef().to(device)
