@@ -5,7 +5,9 @@ import numpy as np
 import pandas as pd
 
 
-def get_pool_predictions(model, pool_dataloader, device):
+def get_pool_predictions(model, pool_dataloader):
+    device = 'cuda' if torch.cuda.is_available else 'cpu'
+
     model.eval()
     all_preds = []
 

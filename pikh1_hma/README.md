@@ -16,10 +16,7 @@
    - Use this model to predict on the rest of the dataset, keeping the dropout layer in the regression head active.
    - Repeat this multiple times, then calculate the mean and variance for each sequence.
    - Update the model with a batch of sequences with the highest variants.
-3. Mean variance estimation
-   - Rather than outputting a single value from the regression head, fine-tune ESM2 to output two values, one representing the predicted enrichment score, the other representing the predicted uncertainty.
-   - Train this model using Gaussian Negative Log-Likelihood (NLL) loss. This will penalize incorrect predictions with high confidence.
-   - Do an initial training set, use the variance to select new mutants, update the model.
+
 
 ## Notes
 
