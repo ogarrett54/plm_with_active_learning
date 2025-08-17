@@ -5,8 +5,8 @@
 - Test different strategies to efficiently fine-tune ESM, using an active learning approach.
 
 ## Approaches
-
-1. Ensemble approach
+### Acquisition
+1. Simple Ensemble
    - Fine-tune a set of 5-10 ESM2 models with different random initializations of the regressor.
    - Use each of these models to predict on the rest of the dataset (this would normally be de novo generated mutants)
    - Calculate the mean and variance of these predictions for each sequence.
@@ -16,10 +16,15 @@
    - Use this model to predict on the rest of the dataset, keeping the dropout layer in the regression head active.
    - Repeat this multiple times, then calculate the mean and variance for each sequence.
    - Update the model with a batch of sequences with the highest variants.
-
+3. Bootstrap Ensemble
+   - Fine-tune a set of 5-10 ESM2 models with random initializations of the regressor, and on bootstrapped samples (90% of available training data)
+   - Same principle as above
+4. MC Dropout and Bootstrap Ensemble with added diversity
+   - Choose from samples with top X% of uncertainty
+      - Choose randomly OR
+      - Choose based on maximum embedding distance
 
 ## Notes
 
 - Be sure to reserve a universal test set.
 - When selecting new mutants for retraining, it would be best to keep these diverse. We have a limited, predetermined dataset to work with in these experiments, but play around with ESM2 embedding clustering and using this to maximize diversity and uncertainty.
-- The environment manager used for this project is Pixi, we will see how well it works.
