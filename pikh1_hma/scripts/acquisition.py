@@ -3,6 +3,9 @@ from torch.utils.data import Subset, DataLoader
 from tqdm import tqdm
 import numpy as np
 import pandas as pd
+from pathlib import Path
+
+from .training import initialize_and_train_new_model
 
 
 def get_pool_predictions(model, pool_dataloader):
@@ -32,6 +35,11 @@ def get_variances(ensemble_predictions, save_path=None):
 
     if save_path:
         print(f"Saving variance distribution to {save_path}...")
+
+        save_path = Path(save_path)
+        save_dir = save_path.parent
+        save_dir.mkdir(parents=True, exist_ok=True)
+
         # Move tensor to CPU and convert to a NumPy array to use with pandas
         variances_np = variances.cpu().numpy()
         
@@ -72,4 +80,48 @@ def acquire_new_batch(dataset, train_dataloader_batch_size, pool_dataloader_batc
     
     return train_dataloader, pool_dataloader, labeled_indices, unlabeled_indices
 
-# TODO: Add acquisition functions, these will change depending on the approach
+def get_bootstrap_sample(labeled_indices, pool_dataset, train_dataloader_batch_size):
+    bootstrap_indices = np.random.choice(labeled_indices, size=int(0.9*len(labeled_indices)),replace=True)
+    bootstrap_subset = Subset(pool_dataset, bootstrap_indices)
+    bootstrap_dataloader = DataLoader(bootstrap_subset, batch_size=train_dataloader_batch_size, shuffle=True)
+    return bootstrap_dataloader
+
+def train_bootstrapped_ensemble(
+        n_models, 
+        model_name, 
+        approach,
+        learning_rate,
+        weight_decay,
+        epochs,
+        labeled_indices,
+        train_dataloader_batch_size,
+        pool_dataset, 
+        pool_dataloader, 
+        val_dataloader,
+        patience
+        ):
+    
+    # define list to store predictions as each model is trained then evaluated
+    ensemble_predictions = []
+    
+    for i in range(n_models):
+        print(f"\nTraining Model {i+1}...")
+        # set a changing manual seed
+        torch.manual_seed(i)
+        torch.cuda.manual_seed(i)
+
+        # get bootstrap sample from labeled dataset
+        bootstrap_dataloader = get_bootstrap_sample(labeled_indices, pool_dataset, train_dataloader_batch_size)
+
+        # initialize and train a new model
+        model = initialize_and_train_new_model(approach, model_name, learning_rate, weight_decay, epochs, bootstrap_dataloader, val_dataloader, patience)
+        
+        # get model predictions on pool dataloader, append to ensemble predictions list
+        pool_preds = get_pool_predictions(model, pool_dataloader, )
+        ensemble_predictions.append(pool_preds)
+
+    # stack ensemble predictions to create tensor of shape (n_models, n_unlabeled_samples)
+    ensemble_predictions = torch.stack(ensemble_predictions, dim=0)
+    print("Ensemble training complete, submitting predictions for next cycle.")
+    # return list of ensemble predictions
+    return ensemble_predictions
